@@ -1,0 +1,10 @@
+{
+  "name": "typedoc-test",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "few-sw <149263800+few-sw@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
