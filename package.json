@@ -4,6 +4,9 @@
   "main": "src/index.ts",
   "author": "few-sw <149263800+few-sw@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "doc": "typedoc"
+  },
   "devDependencies": {
     "typescript": "^5.2.2",
     "typedoc": "^0.25.3"

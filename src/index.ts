@@ -8,7 +8,7 @@ import { Greeter } from './utils'
  * @param b second number
  * @returns a total of two numbers
  */
-function mySum(a: number, b: number) {
+export function mySum(a: number, b: number) {
     return b + a;
 }
 
@@ -18,7 +18,7 @@ function mySum(a: number, b: number) {
  * 
  * @returns a total of two numbers
  */
-let calTotal: (a: number, b: number, c?: number) => number;
+export let calTotal: (a: number, b: number, c?: number) => number;
 calTotal = (num1: number, num2: number) => {
     return num1 + num2
 }
