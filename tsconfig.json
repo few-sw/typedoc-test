@@ -108,6 +108,6 @@
   }, 
   "typedocOptions": {
     "entryPoints": ["src/index.ts", "src/utils/index.ts"],
-    "out": "docs3"
+    "out": "docs"
   }
 }
