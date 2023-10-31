@@ -13,8 +13,7 @@ utils/index.ts
 import { Greeter } from "./greeter";
 import { Employee } from "./employee";
 
-export { Greeter } from './greeter';
-export { Employee } from './employee';
+export { Greeter, Employee }
 
 ```
 - Every module's index.ts needs to be added to entryPoints attribute on tsconfig.json
@@ -55,7 +54,8 @@ Changes on tsconfig.json
 {
   "compilerOptions": {
     "allowJs": true, 
-     "outDir": "./dist", 
+     "outDir": "./dist",
+     "include": ["src/**/*.js", "src/**/*.ts"] 
   },
 }    
 ```
