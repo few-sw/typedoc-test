@@ -48,3 +48,14 @@ Then update the scripts key on package.json file:
     "doc": "npx typedoc"
   },
 ```
+
+## Including Js files
+Changes on tsconfig.json
+```
+{
+  "compilerOptions": {
+    "allowJs": true, 
+     "outDir": "./dist", 
+  },
+}    
+```
