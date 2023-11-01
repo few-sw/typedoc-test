@@ -108,8 +108,8 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }, 
   "typedocOptions": {
-    "entryPoints": ["src/"], // , "src/api"],
-    // "entryPoints": ["src/index.ts", "src/utils/index.ts","src/api/index.js"],
+    // "entryPoints": ["src/"], // , "src/api"],
+    "entryPoints": ["src/index.ts", "src/utils/index.ts","src/api/index.js"],
     "entryPointStrategy": "expand",
     "out": "docs"
   },
