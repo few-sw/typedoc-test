@@ -14,7 +14,7 @@ import { Greeter } from "./greeter";
 import { Employee } from "./employee";
 
 export { Greeter, Employee }
-
+ 
 ```
 - Every module's index.ts needs to be added to entryPoints attribute on tsconfig.json
 
