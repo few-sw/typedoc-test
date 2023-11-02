@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build documentation
-        uses: few-sw/typedoc-action
+        uses: few-sw/typedoc-action@v2.6.2
         with:
           entry: ${{ env.ENTRY_FILE }}
           config:  ${{ env.CONFIG_PATH }}
