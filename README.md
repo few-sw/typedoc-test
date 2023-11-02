@@ -108,3 +108,10 @@ jobs:
 Settings / Actions / General
 
 ![Alt text](/src/assets/imgs/workflor-permissions.png)
+
+
+## Configuration steps
+- Install typedoc 
+```
+npm i typedoc --save-dev
+```
