@@ -37,9 +37,10 @@ This option provides more flexibility, especially if you want to use a build pro
 First need to add typedoc configuration to tsconfig.json
 ```
   "typedocOptions": {
-    "entryPoints": ["src/index.ts", "src/utils/index.ts"],
-    "out": "docs3"
-  }
+    "entryPoints": ["src"],
+    "entryPointStrategy": "expand",
+    "out": "docs",
+  },
 ```
 Then update the scripts key on package.json file:
 ```

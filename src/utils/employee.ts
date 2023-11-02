@@ -1,10 +1,12 @@
 export class Employee {
     empCode: number;
     empName: string;
+    boss: BossPrivate;
 
     constructor(code: number, name: string) {
             this.empName = name;
             this.empCode = code;
+            this.boss = new BossPrivate(code, name)
     }
 
     private getSalaryPrivate(): number {
@@ -12,11 +14,11 @@ export class Employee {
     }
     
     getSalary() : number {
-        return 10000;
+        return  this.getSalaryPrivate();
     }
 }
 
-class EmployeePrivate {
+class BossPrivate {
     empCode: number;
     empName: string;
 
@@ -30,6 +32,6 @@ class EmployeePrivate {
     }
     
     getSalary() : number {
-        return 10000;
+        return this.getSalaryPrivate();
     }
 }
