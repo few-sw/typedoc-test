@@ -1,4 +1,5 @@
-import { Greeter } from './utils'
+import { Greeter } from './utils/index'
+import { DataProcessor } from './api'
 
 /**
  * 
@@ -29,3 +30,16 @@ const greet = new Greeter()
 greet.greet()
 greet.greetNewUser("John")
 greet.greet()
+
+// Usage
+const apiUrl = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin-cash&vs_currencies=usd';
+const dataProcessor = new DataProcessor(apiUrl);
+
+dataProcessor.fetchBitcoinCashPrice()
+  .then((price: any) => {
+    if (price !== null) {
+      console.log(`Bitcoin Cash Price in USD: ${price}`);
+    } else {
+      console.log('Failed to fetch the price.');
+    }
+  });
